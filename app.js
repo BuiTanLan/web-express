@@ -1,7 +1,7 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const app = express();
-const port = 3000;
+const port = 3001;
 const path = require('path')
 const middleware = require('./middleware');
 const server = app.listen(port, () => console.log(`Server is listening on ${port}`));
@@ -21,3 +21,31 @@ app.get('/', (req, res) => {
     res.render('users/home');
 });
 
+app.get('/user/home', (req, res) => {
+    res.render('users/home');
+});
+
+app.get('/user/document', (req, res) => {
+    res.render('users/document');
+});
+
+
+app.get('/user/courses', (req, res) => {
+    res.render('users/courses');
+});
+
+app.get('/user/teacher', (req, res) => {
+    res.render('users/teacher');
+});
+
+app.get('/user/courses', (req, res) => {
+    res.render('users/courses');
+});
+
+app.get('/user/contact', (req, res) => {
+    res.render('users/contact');
+});
+
+app.get('/user/help', (req, res) => {
+    res.render('users/help');
+});
