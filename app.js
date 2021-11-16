@@ -15,7 +15,7 @@ app.set('view engine', '.hbs');
 // Router
 // const loginRoute = require('./routes/loginRoutes');
 // app.use('/login', loginRoute);
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/')))
 
 app.get('/', (req, res) => {
     res.render('users/home');
