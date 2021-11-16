@@ -1,7 +1,7 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 const path = require('path')
 const middleware = require('./middleware');
 const server = app.listen(port, () => console.log(`Server is listening on ${port}`));
