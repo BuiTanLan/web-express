@@ -38,8 +38,8 @@ app.get('/user/teacher', (req, res) => {
     res.render('users/teacher');
 });
 
-app.get('/user/courses', (req, res) => {
-    res.render('users/courses');
+app.get('/user/coursesRoute', (req, res) => {
+    res.render('users/coursesRoute');
 });
 
 app.get('/user/contact', (req, res) => {
@@ -48,4 +48,12 @@ app.get('/user/contact', (req, res) => {
 
 app.get('/user/help', (req, res) => {
     res.render('users/help');
+});
+
+app.get('/signIn', (req, res) => {
+    res.render('account/signIn');
+});
+
+app.get('/signUp', (req, res) => {
+    res.render('account/signUp');
 });
