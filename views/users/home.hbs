@@ -59,28 +59,26 @@
       <a href="/user/courses" title="Tất cả các lộ trình học tập" class="all-course mc-btn btn-style-1">Xem tất cả</a>
       <div class="module-body">
         <div class="owl-carousel owl-theme" style="display: block; opacity: 1;">
-          {{#each coursesStar}}
-
           <div class="item" style="width: auto;">
             <div class="card h-100">
               <div class="mc-item mc-item-1">
                 <div class="image-heading">
-                  <a href="/user/courses/{{courses.id}}" title="{{courses.name}}"><img style="max-height: 180px;"
-                      title="{{courses.name}}" src="../../public/img/{{courses.image}}" alt="Xay dung khoa hoc"></a>
+                  <a href="/user/courses/Phan Cảnh Lộc" title="Phan Cảnh Lộc"><img style="max-height: 180px;"
+                      title="Phan Cảnh Lộc" src="../../public/img/c.jpg" alt="Xay dung khoa hoc"></a>
                 </div>
                 <div class="card-content-margin">
                   <div class="meta-categories">
-                    <a href="/user/courses/{{courses.id}}" title="{{courses.name}}">{{courses.name}}</a>
+                    <a href="/user/courses/{{courses.id}}" title="{{courses.name}}">Lập trình</a>
                   </div>
                   <div class="content-item">
                     <div class="image-author">
                       <a href="#" title="Giảng viên: Phan Cảnh Lộc">...</a>
                     </div>
-                    <h4><a href="#" title="{{courses.name}}">{{courses.name}}</a></h4>
+                    <h4><a href="#" title="{{courses.name}}">Lập trình C/C++</a></h4>
                     <div class="name-author">
                       <span>Bởi
                         <a href="/user/teacher/{{courses.idTeacher}}"
-                          title="Giảng viên: {{courses.FullName}}">{{courses.FullName}}</a>
+                          title="Giảng viên: {{courses.FullName}}">Phan Cảnh Lộc</a>
                       </span>
                     </div>
                   </div>
@@ -88,16 +86,14 @@
                     <div class="rating">
 
                       Đánh giá:
-                      {{#each star}}
                       <span class="fa fa-star checked"></span>
-                      {{/each}}
 
                     </div>
                     <div class="view-info">
-                      <i class="fa fa-users" aria-hidden="true"></i>{{courses.view}}
+                      <i class="fa fa-users" aria-hidden="true"></i>101
                     </div>
                     <div class="price">
-                      <span>{{format courses.price}} đ</span>
+                      <span>1.000.000 đ</span>
                     </div>
                   </div>
                 </div>
@@ -106,8 +102,89 @@
             </div>
 
           </div>
+<div class="item" style="width: auto;">
+  <div class="card h-100">
+    <div class="mc-item mc-item-1">
+      <div class="image-heading">
+        <a href="/user/courses/Phan Cảnh Lộc" title="Phan Cảnh Lộc"><img style="max-height: 180px;"
+            title="Phan Cảnh Lộc" src="../../public/img/c.jpg" alt="Xay dung khoa hoc"></a>
+      </div>
+      <div class="card-content-margin">
+        <div class="meta-categories">
+          <a href="/user/courses/{{courses.id}}" title="{{courses.name}}">Lập trình</a>
+        </div>
+        <div class="content-item">
+          <div class="image-author">
+            <a href="#" title="Giảng viên: Phan Cảnh Lộc">...</a>
+          </div>
+          <h4><a href="#" title="{{courses.name}}">Lập trình C/C++</a></h4>
+          <div class="name-author">
+            <span>Bởi
+              <a href="/user/teacher/{{courses.idTeacher}}" title="Giảng viên: {{courses.FullName}}">Phan Cảnh Lộc</a>
+            </span>
+          </div>
+        </div>
+        <div class="ft-item">
+          <div class="rating">
 
-          {{/each}}
+            Đánh giá:
+            <span class="fa fa-star checked"></span>
+
+          </div>
+          <div class="view-info">
+            <i class="fa fa-users" aria-hidden="true"></i>101
+          </div>
+          <div class="price">
+            <span>1.000.000 đ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><div class="item" style="width: auto;">
+  <div class="card h-100">
+    <div class="mc-item mc-item-1">
+      <div class="image-heading">
+        <a href="/user/courses/Phan Cảnh Lộc" title="Phan Cảnh Lộc"><img style="max-height: 180px;"
+            title="Phan Cảnh Lộc" src="../../public/img/c.jpg" alt="Xay dung khoa hoc"></a>
+      </div>
+      <div class="card-content-margin">
+        <div class="meta-categories">
+          <a href="/user/courses/{{courses.id}}" title="{{courses.name}}">Lập trình</a>
+        </div>
+        <div class="content-item">
+          <div class="image-author">
+            <a href="#" title="Giảng viên: Phan Cảnh Lộc">...</a>
+          </div>
+          <h4><a href="#" title="{{courses.name}}">Lập trình C/C++</a></h4>
+          <div class="name-author">
+            <span>Bởi
+              <a href="/user/teacher/{{courses.idTeacher}}" title="Giảng viên: {{courses.FullName}}">Phan Cảnh Lộc</a>
+            </span>
+          </div>
+        </div>
+        <div class="ft-item">
+          <div class="rating">
+
+            Đánh giá:
+            <span class="fa fa-star checked"></span>
+
+          </div>
+          <div class="view-info">
+            <i class="fa fa-users" aria-hidden="true"></i>101
+          </div>
+          <div class="price">
+            <span>1.000.000 đ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
     </div>
